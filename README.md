@@ -4,8 +4,8 @@ Session management with PHP Class.
 ## **Start()**
 Starts sessions. It works the same as the session_start() function.
 
-###### **Start() Example:**
-```
+###### **Start() Example**
+```php
 $Session = new Session();
 $Session->Start();
 ```
@@ -13,8 +13,8 @@ $Session->Start();
 ## **Create($name, $value)**
 Allows you to create or set a session value.
 
-###### **Create() Example:**
-```
+###### **Create() Example**
+```php
 $Session = new Session();
 $Session->Start();
 $Session->Create('test', 'This is a test message.');
@@ -23,8 +23,8 @@ $Session->Create('test', 'This is a test message.');
 ## **Get($name)**
 Lets you call the session value you created.
 
-###### **Get() Example:**
-```
+###### **Get() Example**
+```php
 $Session = new Session();
 $Session->Start();
 $Session->Create('test', 'This is a test message.');
@@ -32,14 +32,14 @@ $Session->Create('test', 'This is a test message.');
 $test = $Session->Get('test');
 echo $test;
 ```
-###### **Get() Result:**
+###### **Get() Result**
 > This is a test message.
 
 ## **Delete($name)**
 Allows you to delete the session value you created.
 
-###### **Delete() Example:**
-```
+###### **Delete() Example**
+```php
 $Session = new Session();
 $Session->Start();
 $Session->Create('test', 'This is a test message.'); // We create a new value.
